@@ -28,7 +28,7 @@ public class TodoListServiceImpl implements TodoListService{
 
     @Override
     public Boolean removeTodoList(final Integer number) {
-        return removeTodoList(number);
+        return todoListRepository.remove(number);
     }
 
     @Override
